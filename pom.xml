@@ -6,7 +6,7 @@
 
 	<groupId>pt.uminho.ceb.biosystems.mew</groupId>
 	<artifactId>mew-availablemodelsapi</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>availablemodelsapi</name>
@@ -70,16 +70,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<distributionManagement>
-		<snapshotRepository>
-			<id>biosystems-snapshots</id>
-			<url>http://193.137.11.210/nexus/content/repositories/biosystems-snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>biosystems-releases</id>
-			<url>http://193.137.11.210/nexus/content/repositories/biosystems-releases</url>
-		</repository>
-	</distributionManagement>
 
 </project>
