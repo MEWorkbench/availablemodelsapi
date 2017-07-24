@@ -4,11 +4,12 @@
 
 	<groupId>pt.uminho.ceb.biosystems.mew</groupId>
 	<artifactId>mew-availablemodelsapi</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>availablemodelsapi</name>
 	<description>Available Models API for MEWorkbench</description>
+	<url>https://github.com/MEWorkbench/availablemodelsapi</url>
 
 	<developers>
 		<developer>
@@ -55,6 +56,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
+		<project.sign.skip>true</project.sign.skip>
 	</properties>
 	
 	
@@ -123,6 +125,9 @@
 						<goals>
 							<goal>sign</goal>
 						</goals>
+						<configuration>
+							<skip>${project.sign.skip}</skip>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
